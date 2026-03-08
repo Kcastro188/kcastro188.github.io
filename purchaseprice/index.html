@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //define function
+        function purchasePrice()
+        {
+            var amount = document.getElementById("amount").value;
+            var tax = document.getElementById("tax").value;
+            var price = amount * tax;
+            //output
+            document.getElementById("price").value = price;
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for="amount">Amount:</label><br>
+            <input type="text" id="amount" name="amount" value=""><br>
+
+            <label for="tax">Tax:</label><br>
+            <input type="output" id="tax" name="tax" value="8.25" disabled><br><br>
+
+            <label for="price">Purchase price:</label><br>
+            <input type="output" id="price" name="price" value="" disabled><br><br>
+
+            <input type="button" value="Calculate purchase price" onclick="purchasePrice()">
+        </form>
+    </body>
+</html>
