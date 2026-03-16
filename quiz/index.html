@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="code.js"></script>
         <title>QUIZ</title>
   </head> 
   <body>
@@ -11,13 +12,14 @@
      <header>What color is a primary color?</header>
 
      <input type="radio" id="red" name="color" value="red">
-     <label for="red">Red</label><br>
+     <label for="red">red</label><br>
 
     <input type="radio" id="brown" name="color" value="brown">
      <label for="brown">brown</label><br>
 
     <input type="radio" id="pink" name="color" value="pink">
      <label for="pink">pink</label><br><br>
+     <div id="q1"></div>
 
      <header>What is H2O?</header>
     <input type="radio" id="dirt" name="question2" value="dirt">
@@ -28,6 +30,7 @@
 
     <input type="radio" id="fire" name="question2" value="fire">
      <label for="fire">fire</label><br>
+     <div id="q2"></div>
 
      <hr>
 
@@ -41,8 +44,9 @@
 
     <input type="checkbox" id="scream" name="scream" value="scream">
     <label for="scream">Scream</label><br><br>
+    <div id="q3"></div>
 
-    <label>Whhat songs are by Nirvana?</label><br>
+    <label>What songs are by Nirvana?</label><br>
 
        <input type="checkbox" id="song1" name="song1" value="song1">
     <label for="song1">Heart-shaped box</label>
@@ -55,10 +59,12 @@
 
            <input type="checkbox" id="song4" name="song4" value="song4">
     <label for="song4">We Are The People</label><br><br>
+    <div id="q4"></div>
 
-                <input type="submit" value="Click to Submit">
+                <input type="submit" value="Click to Submit" onclick="answers()">
+                <div id="final_score">Total Points: </div>
 
-
+       
     </section>
   </body>
 </html>
