@@ -1,0 +1,20 @@
+th, td, table, tr, caption{
+    border: 1px solid rgb(255, 102, 0);
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+caption{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+body{
+    background-color: black;
+    color:greenyellow
+}
+
+table{
+    margin: auto;
+    margin-top: 50px;
+}
